@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <title>Habitu Store</title>
+  <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="Habitu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <body>
+
+      <!-- Sidebar/menu -->
+      <div class="sidenav">
+
+        <a href="#"><div class="logo">
+          <img src="img/HabituStore1.png">
+          <a >Habtu Store</a>
+        </div></a>
+
+        <div style="margin-top: 30px;"></div>
+
+        <div class="sidenav1">
+          <a href="index.html">Baju kaos</a>
+          <a href="jakethoodie.html" style="background-color: #ff9966; color: white;">Hoodie dan jaket</a>
+            
+          <button class="dropdown-btn">Pria 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Jeans</a>
+            <a href="#">Celana katun</a>
+            <a href="#">Baju olahraga</a>
+            <a href="#">Pakaian muslim</a>
+          </div>
+
+          <button class="dropdown-btn">Wanita 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Jeans</a>
+            <a href="#">Celana katun</a>
+            <a href="#">Baju olahraga</a>
+            <a href="#">Pakaian muslim</a>
+            <a href="#">Rok</a>
+          </div>
+
+          <div style="margin-top: 30px;"></div>
+
+          <a href="#contact">Profile</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+      </div>
+
+      <div class="wrapper">
+
+        <a href=""><div class="isi">
+                <img src="img/Hoodie1.png" width="600" height="400">
+            <div class="desc">
+                <div class="a">Hoodie Biru</div>
+                <div class="b">Size : S M L XL</div>
+                <div class="c">Rp 150.000</div>
+            </div>
+        </div></a>
+
+        <a href=""><div class="isi">
+                <img src="img/Hoodie2.png" width="600" height="400">
+            <div class="desc">
+                <div class="a">Hoodie Hijau</div>
+                <div class="b">Size : S M L XL</div>
+                <div class="c">Rp 150.000</div>
+            </div>
+        </div></a>
+
+        <a href=""><div class="isi">
+                <img src="img/Hoodie3.png" width="600" height="400">
+            <div class="desc">
+                <div class="a">Hoodie Merah</div>
+                <div class="b">Size : S M L XL</div>
+                <div class="c">Rp 150.000</div>
+            </div>
+        </div></a>
+
+    </div>
+
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+    }
+    });
+    }
+    </script>
+
+  </body>
+</html>
